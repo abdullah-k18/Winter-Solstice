@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  min-height: 200vh;
+}
+
+#main-header {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#main-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #f0f8ff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+#main-nav a:hover {
+  background-color: #ffb347;
+  color: #222;
+  border-radius: 5px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: #ffb347;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.hemisphere,
+.celebration {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hemisphere:hover,
+.celebration:hover {
+  transform: scale(1.02);
+}
+
+.celebration h3 {
+  color: #023047;
+}
+
+.hemisphere h3 {
+  color: #023047;
+}
+
+#traditions ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+#traditions li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: black;
+}
+
+#traditions strong {
+  color: #023047;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-top: 2px solid #ffb347;
+}
+
+#footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+#footer-nav a {
+  color: #ffb347;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer-nav a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
